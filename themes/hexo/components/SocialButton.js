@@ -6,6 +6,11 @@ import React from 'react'
  * @returns {JSX.Element}
  * @constructor
  */
+
+//       <a target='_blank' rel='noreferrer' title={'RSS'} href={'/feed'} >
+//         <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600'/>
+//       </a>
+
 const SocialButton = () => {
   return <div className='w-full justify-center flex-wrap flex'>
     <div className='space-x-3 text-xl text-gray-600 dark:text-gray-300 '>
@@ -27,9 +32,6 @@ const SocialButton = () => {
       {BLOG.CONTACT_EMAIL && <a target='_blank' rel='noreferrer' title={'email'} href={`mailto:${BLOG.CONTACT_EMAIL}`} >
         <i className='transform hover:scale-125 duration-150 fas fa-envelope dark:hover:text-indigo-400 hover:text-indigo-600'/>
       </a>}
-//       <a target='_blank' rel='noreferrer' title={'RSS'} href={'/feed'} >
-//         <i className='transform hover:scale-125 duration-150 fas fa-rss dark:hover:text-indigo-400 hover:text-indigo-600'/>
-//       </a>
     </div>
   </div>
 }
